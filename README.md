@@ -1,21 +1,45 @@
-# co6f14249b468fa5fdd02f1f5
+# Blackjack Game
 
-Quick start:
+This is a simple implementation of a Blackjack game using JavaScript. The game allows a player to draw cards and aims to reach a sum of 21 without exceeding it.
 
-```
-$ npm install
-$ npm start
-````
+## How to Play
 
-Head over to https://vitejs.dev/ to learn more about using vite
-## About Scrimba
+1. Open the `index.html` file in a web browser to start the game.
 
-At Scrimba our goal is to create the best possible coding school at the cost of a gym membership! 💜
-If we succeed with this, it will give anyone who wants to become a software developer a realistic shot at succeeding, regardless of where they live and the size of their wallets 🎉
-The Frontend Developer Career Path aims to teach you everything you need to become a Junior Developer, or you could take a deep-dive with one of our advanced courses 🚀
+2. You'll see the player's name and the initial chip count displayed.
 
-- [Our courses](https://scrimba.com/allcourses)
-- [The Frontend Career Path](https://scrimba.com/learn/frontend)
-- [Become a Scrimba Pro member](https://scrimba.com/pricing)
+3. Click the "Start Game" button to begin a new round.
 
-Happy Coding!
+4. Two random cards will be drawn for the player, and their sum will be displayed.
+
+5. You can choose to draw additional cards by clicking the "New Card" button as long as the total sum is less than or equal to 21.
+
+6. If your card sum reaches 21, you win with Blackjack!
+
+7. If your card sum exceeds 21, you lose and are out of the game.
+
+## Rules
+
+- Number cards are worth their face value (e.g., 2-10).
+- Face cards (Jack, Queen, King) are worth 10.
+- Aces are worth 11.
+
+## Features
+
+- Track your card total and game status in real-time.
+- You can't draw cards once you've reached 21 or busted.
+
+## Code Structure
+
+- `player`: Contains player information (name and chips).
+- `cards`: An array to store the player's cards.
+- `sum`: The sum of the player's cards.
+- `hasBlackJack`: Indicates if the player has Blackjack.
+- `isAlive`: Indicates if the player is still in the game.
+- `message`: Displays game messages.
+- Functions like `getRandomCard()`, `startGame()`, `renderGame()`, and `newCard()` control the game logic.
+- HTML elements are updated using `getElementById()` and `textContent`.
+
+Feel free to explore and modify the code to add more features or customize the game further.
+
+Have fun playing Blackjack!
